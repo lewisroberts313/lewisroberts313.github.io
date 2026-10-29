@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lewis | Personal Page</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <script src="/src/script.js" defer></script>
+</head>
+<body>
+  <!-- Dark mode button moved into body -->
+  <button id="dark-mode-btn">Toggle Dark Mode</button>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+
+  <header>
+    <h1>Lewis' Personal Page</h1>
+    <p>Welcome! I'm a 19-year-old student-athlete passionate about football and web development.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#facts">Facts</a></li>
+      <li><a href="#family">Family</a></li>
+      <li><a href="#career">Football Career</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#facts-explorer">Facts Explorer</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="facts">
+      <h2>Facts</h2>
+      <ul>
+        <li>19 years old</li>
+        <li>From Wales</li>
+        <li>Football is my passion</li>
+        <li>Currently living in Sarasota, Florida</li>
+      </ul>
+    </section>
+
+    <section id="family">
+      <h2>Family</h2>
+      <ul>
+        <li>Dad, Mark Roberts</li>
+        <li>Mum, Helen Roberts</li>
+        <li>Sister, Jessica</li>
+      </ul>
+    </section>
+
+    <section id="career">
+      <h2>Football Career</h2>
+      <ul>
+        <li>Ages 6-12: Holywell Town Football Club (Youth)</li>
+        <li>Ages 10-12: Colwyn Bay Academy Football Club (Youth)</li>
+        <li>Ages 12-15: Hellan Football Club (Youth)</li>
+        <li>Ages 16-18: Hellan Football Club (Mens)</li>
+        <li>Ages 18-present: New College of Florida</li>
+      </ul>
+
+      <h3>Manchester United - My Favourite Football Team</h3>
+      <img src="https://i.pinimg.com/originals/13/16/e9/1316e9e0c1ba71705d17b9163b8bba93.jpg" alt="Birds-eye view of Old Trafford stadium">
+      <img src="https://dynamic-crop-cdn.scoreplay.io/472/4938596/media_103290000_102897383_compressed.jpg?fmt=jpg&f=CENTER&w=1200" alt="Team Celebration">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.DJfB4drwHoKXpM0x2QMlNQHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Side view of Old Trafford stadium">
+      <img src="https://sixsports.in/wp-content/uploads/2025/12/Manchester-United-Man-Utd-22.jpg" alt="Manchester United Fans celebrating in stands">
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <form id="contact-form">
+        <label for="user-name">Name:</label>
+        <input type="text" id="user-name" name="userName">
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="form-message" role="status"></p>
+    </section>
+
+    <section id="facts-explorer">
+      <h2>Interactive Facts Explorer</h2>
+    
+      <!-- Search Input -->
+      <label for="search-input">Search Facts:</label>
+      <input type="text" id="search-input" placeholder="Search facts...">
+    
+      <!-- Category Filter Buttons (Extra Feature) -->
+      <div id="filter-buttons">
+        <button class="filter-btn active" data-category="All">All</button>
+        <button class="filter-btn" data-category="Personal">Personal</button>
+        <button class="filter-btn" data-category="Football">Football</button>
+        <button class="filter-btn" data-category="Location">Location</button>
+      </div>
+
+      <!-- Count Display -->
+      <p id="item-count" aria-live="polite">Showing 0 of 0</p>
+
+      <!-- Dynamic List Container -->
+      <ul id="facts-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Connect with me on <a href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub</a>.</p>
+  </footer>
+</body>
+</html>
